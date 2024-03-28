@@ -3,13 +3,13 @@
 > Trovi [qui](<https://it.wikipedia.org/wiki/Zombi_(filosofia)>) la voce
 > originale su Wikipedia.
 
-Uno zomby filosofico (in inglese, _philosophical zomby_), è un esperimento
+Uno zombi filosofico (in inglese, _philosophical zombie_), è un esperimento
 mentale in filosofia della mente. Si immagina un essere ipotetico che è
 fisicamente identico e indistinguibile da una persona normale, ma non ha
 coscienza, qualia, o non è senziente[^1]. Per esempio, se uno zombi venisse
 colpito con un oggetto appuntito non avrebbe alcuna sensazione interna di
 dolore. Tuttavia, il suo comportamento (esterno) sarebbe esattamente quello di
-chi prova dolore, incluso l'espressione verbale del dolore. Alla stesso moda, un
+chi prova dolore, incluso l'espressione verbale del dolore. Alla stesso modo, un
 mondo zombi è un mondo possibile indistinguibile dal nostro mondo in cui tutti
 gli esseri mancano di coscienza.
 
