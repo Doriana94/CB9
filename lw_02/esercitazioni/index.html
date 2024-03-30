@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML e CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="titolo-principale">Lezione Edgemony</h1>
+    <br />
+    <h2 class="sottotitolo">Iscrizione Edgemony</h2>
+    <br />
+    <form action="/index.html" method="post">
+      <fieldset class="section-1">
+        <legend>Dati Personali</legend>
+        <br />
+        <div class="section">
+          <label for="name">Nome:</label>
+          <input type="text" name="name" id="name" required />
+          <label for="surname">Cognome:</label>
+          <input type="text" name="surname" id="surname" required /><br /><br />
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email" required />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+          /><br /><br />
+          <label for="tel">Tel:</label>
+          <input type="tel" name="tel" id="tel" required />
+          <label for="Birthday">Birthday:</label>
+          <input type="date" name="Birthday" id="Birthday" /><br /><br />
+          <label for="favcolor">Seleziona il tuo colore preferito: </label>
+          <input type="color" name="favcolor" id="favcolor" /><br /><br />
+        </div>
+      </fieldset>
+      <br />
+      <fieldset class="section-2">
+        <legend>Mezzi di trasporto</legend>
+        <br />
+        <div class="section">
+          <label id="question" for="vehicle">Quale mezzo possiedi?</label
+          ><br /><br />
+          <input type="checkbox" name="vehicle1" id="vehicle1" value="car" />
+          <label id="car" for="vehicle1">Car</label>
+          <input
+            type="checkbox"
+            name="vehicle2"
+            id="vehicle2"
+            value="motorcycle"
+          />
+          <label id="motorcycle" for="vehicle2">Motorcycle</label>
+          <input
+            type="checkbox"
+            name="vehicle3"
+            id="vehicle3"
+            value="electric kick scooter"
+          />
+          <label id="kickscooter" for="vehicle3">Electric kick scooter</label
+          ><br /><br />
+        </div>
+      </fieldset>
+      <br />
+      <fieldset class="section-3">
+        <legend>Linguaggio di programmazione</legend>
+        <br />
+        <div class="section">
+          <label id="question" for="html"
+            >Quale linguaggio di programmazione preferisci?</label
+          ><br /><br />
+          <input type="radio" name="lang" id="html" value="HTML" />
+          <label id="html" for="html">HTML</label>
+          <input type="radio" name="lang" id="css" value="CSS" />
+          <label id="css" for="css">CSS</label>
+          <input type="radio" name="lang" id="javascript" value="JavaScript" />
+          <label id="javascript" for="javascript">JavaScript</label>
+          <br /><br />
+        </div>
+      </fieldset>
+      <br />
+      <fieldset class="section-4">
+        <legend>Valutazione e commento</legend>
+        <br />
+        <div class="section">
+          <label id="question" for="points">Che voto daresti al sito?</label>
+          <input
+            type="range"
+            name="points"
+            id="points"
+            min="0"
+            max="100"
+            value="100"
+          /><br /><br />
+          <label id="question" for="role"
+            >Quale figura professionale vorresti diventare?</label
+          >
+          <select name="role" id="role">
+            <option value="Developer">Developer</option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Data Analist">Data Analist</option>
+            <option value="UI/UX Designer">UI/UX Designer</option>
+            <option value=" Cyber Security Specialist">
+              Cyber Security Specialist
+            </option></select
+          ><br /><br />
+          <label id="comment" for="comment">Lascia qui un commento:</label
+          ><br /><br />
+          <textarea name="comment" id="comment" cols="30" rows="10"></textarea
+          ><br /><br />
+          <input class="button" type="submit" name="submit" id="submit" value="Submit" />
+          <input
+          class="button"
+            type="reset"
+            name="reset"
+            id="reset"
+            value="Reset"
+          /><br /><br />
+       
+      </fieldset>
+      <br /><br />
+    </form>
+    <figure>
+      <img src="asset/images/coding meme.png" alt="coding-meme" width="200" />
+      <figcaption>Coding_meme</figcaption>
+    </figure>
+    <video
+      src="asset/videos/gif gatto coding meme.mp4"
+      width="300"
+      autoplay
+      muted
+      loop
+    ></video>
+  </body>
+</html>
