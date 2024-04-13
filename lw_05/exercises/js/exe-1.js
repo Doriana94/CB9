@@ -1,21 +1,24 @@
 function countVocal(name) {
   let count = 0;
   for (let i = 0; i < name.length; i++) {
-   if (name[i] === "a" || name[i] === "e" || name[i] === "i" || name[i] === "o" || name[i] === "u") 
-  {
-    
-     count++;
+    if (
+      name[i] === "a" ||
+      name[i] === "e" ||
+      name[i] === "i" ||
+      name[i] === "o" ||
+      name[i] === "u"
+    ) {
+      count++;
+    }
+  }
+  return count;
 }
-   }
-   return count;
-} 
- const vocals = ["a", "e", "i", "o", "u"];
+const vocals = ["a", "e", "i", "o", "u"];
 
- const welcomeUtent = prompt("Benvenuto in questa nuova avventura!");
+const welcomeUtent = prompt("Benvenuto in questa nuova avventura!");
 
- const name = "Doriana";
+const name = "Doriana";
 
-  const numbersVocal = countVocal(welcomeUtent);
+const numbersVocal = countVocal(welcomeUtent);
 
- console.log("Il numero totale di vocali nella stringa è:", numbersVocal);
-
+console.log("Il numero totale di vocali nella stringa è:", numbersVocal);
