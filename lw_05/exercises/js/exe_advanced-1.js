@@ -2,7 +2,7 @@ function incrementedSalary(person) {
   const peopleToIncrease = person
     .filter((person) => person.pay < 3000)
     .map((person) => {
-       return person.name + ": " +  person.pay * 1.1
+      return person.name + ": " + person.pay * 1.1;
     });
   return peopleToIncrease;
 }
@@ -17,7 +17,7 @@ const person = [
 
   { name: "Luigi", pay: 2800 },
 
-  { name: "Laura", pay: 2900 }
+  { name: "Laura", pay: 2900 },
 ];
 
 const newPerson = incrementedSalary(person);
