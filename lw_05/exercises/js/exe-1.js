@@ -19,6 +19,6 @@ const welcomeUtent = prompt("Benvenuto in questa nuova avventura!");
 
 const name = "Doriana";
 
-const numbersVocal = countVocal(welcomeUtent);
+const numbersVocal = countVocal(name);
 
 console.log("Il numero totale di vocali nella stringa è:", numbersVocal);
