@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.input--elements {
+  display: flex;
+  gap: 10px;
+}
+
+.input--elements input,
+.input--elements button {
+  height: 25px;
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.card--list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card--image {
+  width: 250px;
+  height: 280px;
+  object-fit: cover;
+  padding: 8px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 1);
+  border-radius: 6px;
+}
+
+.card--image:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
