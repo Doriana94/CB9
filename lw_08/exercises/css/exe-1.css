@@ -6,7 +6,6 @@
 }
 
 body {
-  overflow: hidden;
   background-color: #63b8e4;
 }
 
@@ -40,4 +39,5 @@ body {
   color: #000000;
   font-style: italic;
   font-weight: 900;
+  margin-top: 5px;
 }
