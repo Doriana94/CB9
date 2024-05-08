@@ -1,48 +1,85 @@
-const createTitle = () => {
+const rootEl = document.querySelector(".root");
+
+const createContainer = () => {
+  const wrapperEl = document.createElement("div");
+  wrapperEl.className = "container";
+  
+  return wrapperEl;
+}
+
+const createTitle = (product) => {
   const titleEl = document.createElement("h1");
 
   titleEl.className = "title";
-  titleEl.textContent = "My Store";
+  titleEl.textContent = product.title;
 
   return titleEl;
 };
 
-const createImage = () => {
-  const wrapperEl = document.createElement("div");
-  wrapperEl.className = "container";
-  wrapperEl.textContent = "";
-
+const createImage = (product) => {
+  
   const imageEl = document.createElement("img");
   imageEl.className = "image";
-  imageEl.src = "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg";
-  imageEl.alt = "";
+  imageEl.src = product.image;
+  imageEl.alt = product.title;
 
-  wrapperEl.append(imageEl);
-  return wrapperEl;
+  return imageEl;
 };
 
-const createDescr = () => {
+const createDescr = (product) => {
   const descrEl = document.createElement("p");
 
   descrEl.className = "description";
-  descrEl.textContent =
-    "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve. Price: `$109.95`;";
-
+  descrEl.textContent = product.description;
+  
   return descrEl;
 };
 
-const rootEl = document.querySelector(".root");
+const createPrice = (product) => {
+  const priceEl = document.createElement("p")
 
-rootEl.append(createTitle(), createImage(), createDescr());
+  priceEl.className = 'price';
+  priceEl.textContent  = product.price;
+
+  return priceEl;
+}
+
 
 fetch("https://fakestoreapi.com/products/1")
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
+.then((res) => res.json())
+.then((data) => {
+const wrapper= createContainer();
+const title = createTitle(data);
+const image = createImage(data);
+const description = createDescr(data); 
+const price = createPrice(data);
+
+wrapper.append(title, image, description, price);
+rootEl.append(wrapper);
   })
-  .catch((error) => {
-    console.log(error);
-  });
-// .finally(() =>{
-//     console.log('La chiamata è andata a buon fine');
-// })
+  
+
+  //ESERCIZIO 2//
+
+  const createMessageError = () => {
+    const error = document.createElement('h3');
+    error.textContent = 'La chiamata non è andata a buon fine. Riprova!';
+    
+    return error;
+  }
+
+  const createMessageNotError = () => {
+    const notError = document.createElement('h3');
+    notError.textContent = 'La chiamata è andata a buon fine. Ottimo lavoro!';
+
+    return notError;
+  }
+
+fetch("https://fakestoreapi.com/products/1")
+.then((res) => res.json())
+.then((data) => {
+  const notError = createMessageNotError(data);
+  rootEl.append(notError);
+  const error = createMessageError(data); 
+  rootEl.append(error);
+})
