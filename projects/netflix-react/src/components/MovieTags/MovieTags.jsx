@@ -1,5 +1,5 @@
 const MovieTags = ({ children, list, title }) => {
-  return (
+  return ( 
     <section className="movie-tags">
       <span>{title}</span>
       <ul>
@@ -9,6 +9,7 @@ const MovieTags = ({ children, list, title }) => {
         {children}
       </ul>
     </section>
+ 
   );
 };
 

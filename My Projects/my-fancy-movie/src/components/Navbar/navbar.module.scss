@@ -1,0 +1,30 @@
+.navbarContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+
+
+.menuList{
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    padding-right: 40px;
+    font-weight: bold;
+}
+
+h1{
+    position: absolute;
+    left: 180px;
+    font-size: 24px;
+}
+
+a{
+    color: #000000;   
+}
+
+a:hover{
+    color: rgb(198, 0, 228)
+}
+
+}

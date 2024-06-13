@@ -1,3 +1,5 @@
+import MovieCard from "../MovieCard/MovieCard";
+
 const MovieList = ({ children, movieList = [] }) => {
   return (
     <div className="movie-list">

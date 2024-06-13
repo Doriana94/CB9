@@ -1,0 +1,15 @@
+@use '../../assets/variables';
+
+.logo{
+    position: relative;
+    width: 80px;
+     padding-left: 40px;
+    }
+
+.navbarContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid red;
+    height: 80px;
+}
