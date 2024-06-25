@@ -1,0 +1,60 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.arrowContainer {
+  display: flex;
+  position: relative;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 15px;
+  color: rgba(70, 69, 69, 1);
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+p {
+  text-align: center;
+  opacity: 0.8;
+}
+
+.accountContainer {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account {
+  width: 40px;
+  height: 40px;
+}
+
+.accountContainer h1 {
+  text-transform: lowercase;
+  padding: 10px;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-right: auto;
+}
+
+.ellipsis {
+  width: 25px;
+  height: 25px;
+  padding-right: 5px;
+}
+
+.iconContainer {
+  margin-top: 500px;
+  height: 100px;
+}

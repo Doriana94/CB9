@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+SK:wght@100..400&display=swap");
+
+.userContainer {
+  flex-direction: column;
+  display: flex;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 30px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+h2 {
+  font-family: "Playwrite SK", cursive;
+  font-weight: normal;
+}
+
+.description {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttonProfile {
+  display: flex;
+  padding: 20px 30px;
+  gap: 20px;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  background-color: #272626;
+  color: #ffffff;
+  width: 150px;
+  height: 28px;
+}

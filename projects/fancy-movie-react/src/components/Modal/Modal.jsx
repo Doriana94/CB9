@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styles from "./modal.module.scss";
 import { IoMdCloseCircle } from "react-icons/io";
 
@@ -13,8 +14,11 @@ const Modal = ({ handleCloseClick, movie }) => {
           <p className={styles.overview}>{overview}</p>
         </div>
         <div className={styles.closeButtonContainer}>
-          <IoMdCloseCircle className={styles.iconClose} onClick={handleCloseClick} />
+          <IoMdCloseCircle 
+          className={styles.iconClose} 
+          onClick={handleCloseClick} />
         </div>
+        <NavLink to = {`catologo/${movie.id}`}>Vai al film</NavLink>
       </div>
     </div>
   );

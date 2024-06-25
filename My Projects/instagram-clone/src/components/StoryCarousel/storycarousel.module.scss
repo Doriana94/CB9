@@ -1,0 +1,22 @@
+.storyCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.addedStory {
+  display: flex;
+  flex-direction: column;
+}
+
+.plusStory {
+  width: 50px;
+  height: 50px;
+  border-radius: 10rem;
+  border: 2px solid;
+  text-align: center;
+  font-size: 35px;
+  margin: auto;
+}
