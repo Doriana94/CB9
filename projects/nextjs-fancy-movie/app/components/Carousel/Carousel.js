@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
 import { useRef } from "react";
-// import MovieCard from "../MovieCard/MovieCard";
 import styles from "./carousel.module.scss";
+import MovieCard from "../MovieCard/MovieCard";
 import {
   IoIosArrowDroprightCircle,
   IoIosArrowDropleftCircle,
@@ -12,7 +12,6 @@ const Carousel = () => {
   const carouselRef = useRef();
   const movieCardRef = useRef();
 
-  
   const handleArrowClick = (type) => {
     const movieCardWidth = movieCardRef.current?.offsetWidth;
 
@@ -59,7 +58,13 @@ const Carousel = () => {
             />
           );
         })} */}
-      </div> 
+        <MovieCard refProp={movieCardRef}/>
+        <MovieCard refProp={movieCardRef}/>
+        <MovieCard refProp={movieCardRef}/>
+        <MovieCard refProp={movieCardRef}/>
+        <MovieCard refProp={movieCardRef}/>
+        <MovieCard refProp={movieCardRef}/>
+      </div>
     </div>
   );
 };
