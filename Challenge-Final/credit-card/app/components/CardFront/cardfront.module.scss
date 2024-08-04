@@ -1,0 +1,32 @@
+.cardFront {
+  width: 480px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to right, #4a00e0, #8e2de2);
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+
+  .logoCard {
+    margin: 20px;
+  }
+
+  .cardNumber {
+    font-size: 22px;
+    margin: 80px 0 0 30px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+}
+
+.personalData {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+
+  .cardName,
+  .cardDate {
+    font-size: 14px;
+    color: #f7f7f7;
+  }
+}
